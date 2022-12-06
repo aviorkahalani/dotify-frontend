@@ -1,5 +1,13 @@
+import { Outlet } from 'react-router-dom'
+import { MainSideBar } from './components/MainSideBar'
+
 function App() {
-  return <div className="app">This is my app</div>
+  return (
+    <section className="app">
+      <MainSideBar />
+      <Outlet />
+    </section>
+  )
 }
 
 export default App
